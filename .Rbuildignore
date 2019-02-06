@@ -1,0 +1,7 @@
+^docs$
+^LICENSE\.md$
+^vignettes$
+^data-raw$
+^viperPaper$
+^.*\.Rproj$
+^\.Rproj\.user$
