@@ -1,11 +1,20 @@
 # viperData
-This package contains a markdown version of Gallas2018_J-Med-Imag_v6p015501 and supplementary materials, including the data.
+This package contains supplementary materials of the paper
+* **Citation** Brandon D. Gallas, Weijie Chen, Elodia Cole, Robert Ochs, Nicholas Petrick, Etta D. Pisano, Berkman Sahiner, Frank W. Samuelson, Kyle J. Myers, "Impact of prevalence and case distribution in lab-based diagnostic imaging studies," _J. Med. Imag._ **6**(1), 015501 (2019), [doi: 10.1117/1.JMI.6.1.015501](http://dx.doi.org/10.1117/1.JMI.6.1.015501).
 
-**Citation** Brandon D. Gallas, Weijie Chen, Elodia Cole, Robert Ochs, Nicholas Petrick, Etta D. Pisano, Berkman Sahiner, Frank W. Samuelson, Kyle J. Myers, "Impact of prevalence and case distribution in lab-based diagnostic imaging studies," _J. Med. Imag._ **6**(1), 015501 (2019), [doi: 10.1117/1.JMI.6.1.015501](http://dx.doi.org/10.1117/1.JMI.6.1.015501).
+Please cite this paper in any work that uses these materials.
 
-# Impact of prevalence and case distribution in lab-based diagnostic imaging studies
-ABSTRACT: We investigated effects of prevalence and case distribution on radiologist diagnostic performance as measured by area under the receiver operating characteristic curve (AUC) and sensitivity-specificity in lab-based reader studies evaluating imaging devices. Our retrospective reader studies compared full-field digital mammography (FFDM) to screen-film mammography (SFM) for women with dense breasts. Mammograms were acquired from the prospective Digital Mammographic Imaging Screening Trial (DMIST). We performed five reader studies that differed in terms of cancer prevalence and the distribution of non-cancers. Twenty radiologists participated in each reader study. Using split-plot study designs, we collected recall decisions and multi-level scores from the radiologists for calculating sensitivity, specificity, and AUC. Differences in reader-averaged AUCs slightly favored SFM over FFDM (biggest AUC difference: 0.047, SE=0.023 p=0.047), where standard error (SE) accounts for reader and case variability. The differences were not significant at a level of 0.01 (0.05/5 reader studies). The differences in sensitivities and specificities were also indeterminate. Prevalence had little effect on AUC (largest difference: 0.02), whereas sensitivity increased and specificity decreased as prevalence increased. We found that AUC is robust to changes in prevalence, while radiologists were more aggressive with recall decisions as prevalence increased.
-**Keywords** Image Evaluation, Study Design, MRMC analysis, AUC, Sensitivity, Specificity.
+# Main Assets
+
+* __[viperData_1.0.1.tar.gz](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperData_1.0.1.tar.gz)__: This is an R package (source) with the data and functions. Everything in this repository is in this package. See below for more details.
+
+* __[viperData_1.0.1.zip](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperData_1.0.1.zip)__: This is an R package (binary) with the data and functions. Everything in this repository is in this package. See below for more details.
+
+* __[viperObs455.csv](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperObs455.csv)__: Individual observations of each reader reading each case ([Documentation](https://didsr.github.io/viperData/man/viperObservations.html)).
+
+* __[viperReaderQualifications.csv](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperReaderQualifications.csv)__: Information from the VIPER reader recruitment qualification forms ([Documentation](https://didsr.github.io/viperData/man/viperReaderQualifications.html)).
+
+* __[dmistData.csv](https://github.com/DIDSR/viperData/releases/download/v1.0.1/dmistData.csv)__: Performance data manually translated from Pisano2005_NEJM_v353p1773 and its supplement ([Documentation](https://didsr.github.io/viperData/man/dmistData.html))
 
 ## R Data Package: viperData
 
