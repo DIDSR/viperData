@@ -1,12 +1,15 @@
 Package: viperData
 Type: Package
-Title: An R Markdown Version of Gallas2018_J-Med-Img_accepted and the Data
+Title: Supplementary Materials For The Impact of prevalence and case distribution in lab-based diagnostic imaging studies
 Version: 1.0.1
+Date: 2019-02-07
 Author: Brandon D. Gallas, Weijie Chen, Elodia Cole, Robert Ochs, Nicholas A. Petrick,
   Etta D. Pisano, Berkman Sahiner, Frank W. Samuelson, and Kyle J. Myers
 Maintainer: Dr. Brandon D. Gallas <brandon.gallas@fda.hhs.gov>
-Description: This package contains the markdown version of Gallas2018_J-Med-Imag_accepted and the Data.
+Description: This package contains supplementary materials (data, scripts, markdown files)
+  for the following paper :
     TITLE: Impact of prevalence and case distribution in lab-based diagnostic imaging studies
+    CITATION INFO: J. of Medical Imaging, 6(1), 015501 (2019). https://doi.org/10.1117/1.JMI.6.1.015501
     ABSTRACT: We investigated effects of prevalence and case distribution on radiologist diagnostic
   performance as measured by area under the receiver operating characteristic curve (AUC) and
   sensitivity-specificity in lab-based reader studies evaluating imaging devices.
