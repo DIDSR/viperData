@@ -6,7 +6,7 @@ Date: 2019-02-07
 Author: Brandon D. Gallas, Weijie Chen, Elodia Cole, Robert Ochs, Nicholas A. Petrick,
   Etta D. Pisano, Berkman Sahiner, Frank W. Samuelson, and Kyle J. Myers
 Maintainer: Dr. Brandon D. Gallas <brandon.gallas@fda.hhs.gov>
-Description: This package contains supplementary materials (data, scripts, markdown files)
+Description: This package contains supplementary materials (data, functions, markdown files)
   for the following paper :
     TITLE: Impact of prevalence and case distribution in lab-based diagnostic imaging studies
     CITATION INFO: J. of Medical Imaging, 6(1), 015501 (2019). https://doi.org/10.1117/1.JMI.6.1.015501
