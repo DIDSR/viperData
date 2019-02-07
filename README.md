@@ -1,5 +1,5 @@
 # viperData
-This [repository](https://github.com/DIDSR/viperData) contains supplementary materials (data, R functions, R markdown files) for the following paper:
+The [viperData repository and R package](https://github.com/DIDSR/viperData) contain supplementary materials (data, R functions, R markdown files) for the following paper:
 * **Citation** Brandon D. Gallas, Weijie Chen, Elodia Cole, Robert Ochs, Nicholas Petrick, Etta D. Pisano, Berkman Sahiner, Frank W. Samuelson, Kyle J. Myers, "Impact of prevalence and case distribution in lab-based diagnostic imaging studies," _J. Med. Imag._ **6**(1), 015501 (2019), [doi: 10.1117/1.JMI.6.1.015501](http://dx.doi.org/10.1117/1.JMI.6.1.015501).
 
 Please cite this paper in any work that uses these materials.
