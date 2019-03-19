@@ -4,6 +4,8 @@ The [viperData repository and R package](https://github.com/DIDSR/viperData) con
 
 Please cite this paper in any work that uses these materials.
 
+All statistical analyses make use of the iMRMC package ([Java GUI](https://github.com/DIDSR/iMRMC/releases), [R package](https://cran.r-project.org/web/packages/iMRMC/index.html)).
+
 # Main Assets
 
 * __[viperData_1.0.1.tar.gz](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperData_1.0.1.tar.gz)__: This is an R package (source) with the data and functions. Everything in this repository is in this package. See below for more details.
