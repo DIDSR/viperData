@@ -31,3 +31,5 @@ All statistical analyses make use of the iMRMC package ([Java GUI](https://githu
   * Summary performance statistics of the VIPER observations ([Documentation](https://didsr.github.io/viperData/man/viperSummary.html)).
 * `dmistRSsummary`
   * Performance summaries from DMIST reader studies ([Documentation](https://didsr.github.io/viperData/man/dmistRSsummary.html))
+
+[![Github All Releases](https://didsr.github.io/viperData/downloads/total.svg)]()
