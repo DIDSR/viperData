@@ -73,6 +73,53 @@ NULL
 #' @rdname viperObservations
 "viperObs455"
 
+
+## viperObservationsMerge ####
+#' viperObservationsMerge
+
+#' @name viperObservationsMerge
+#'
+#' @description The VIPER data sets were created by aggregating
+#'   all the raw reader data files from the FDA VIPER study (365 and 455 days observations):
+#'   Validation of Imaging Premarket Evaluation and Regulation (VIPER).
+#'   The data sets differ in the truth labels. See the documentation details.
+#'
+#' @details A data frame with 36 variables: \cr
+#'   \itemize{
+#'     \item \code{caseType455} [str] Cancer type based on 455 days result: birads123sfm, birads0sfm, birads0ffdm, birads123ffdm, cancer
+#'     \item \code{CaseID} [str] Cancer type based on 365 days result: birads123sfm, birads0sfm, birads0ffdm, birads123ffdm, cancer
+#'     \item \code{Modality} [num] Cancer status based on 455 days result. 1: Cancer; 2: Not cancer
+#'     \item \code{ReaderID} [num] Cancer status based on 365 days result. 1: Cancer; 2: Not cancer
+#'     \item \code{caseID} [num] case ID
+#'     \item \code{readerID} [str] reader ID: 44 readers
+#'     \item \code{modalityID} [str] modality ID: FFDM, SFM
+#'     \item \code{recall} [num] binary recall decision. 1: recall; 2: not recall
+#'     \item \code{abnormalityType} abnormality type of case
+#'     \item \code{score} [num] dignostic result \cr 
+#'            0-100: not recall, lower value means higher not recall confidence \cr 
+#'            101-200: recall, higer value means higher recall confidence
+#'     \item \code{caseGroup} [str] group of case: cgrp1, cgrp2, cgrp3, cgrp4
+#'     \item \code{subStudyLabel} [str] study group: screeningLowP,screeningMedP,screeningHighP, challengeMedP,challengeHighP
+#'   }
+#'
+#'   \strong{viperObs}: This dataset is identical to \code{\link{viperObs}} except for the truth labels.
+#'   The truth labels for this dataset are based on cancer at 365 and 455 days.
+#'
+#'   The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
+#'   The VIPER study concept 2011. Data collection September 2013 to August 2015.
+#'   Please refer to journal paper for details.
+#'
+NULL
+
+## viperObs ####
+#' viperObs
+#'
+#' @rdname viperObservationsMerge
+"viperObs"
+#'
+#'
+#'
+
 ## viperSummaries ####
 #' viperSummaries
 #'

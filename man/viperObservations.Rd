@@ -13,8 +13,9 @@ viperObs365
 viperObs455
 }
 \description{
-The VIPER data sets were created by aggregating all the raw reader data files from the
-  FDA VIPER study: Validation of Imaging Premarket Evaluation and Regulation (VIPER).
+The VIPER data sets were created by aggregating
+  all the raw reader data files from the FDA VIPER study:
+  Validation of Imaging Premarket Evaluation and Regulation (VIPER).
   The data sets differ in the truth labels. See the documentation details.
 }
 \details{
