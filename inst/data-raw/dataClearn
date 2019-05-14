@@ -1,4 +1,5 @@
-Keey columns: caseID
+Merge viperObs365.csv and viperObs455.csv to viperObs.csv
+Keep columns: caseID
 Remove columns: observation id, CaseReadOrder, readerID.relative, Study, Track, ReadSetLetter, Initial.Comparison
 Rename columns: Ctype to caseType455 and caseType365
 Add columns: cancerStatus455, cancerStatus365
