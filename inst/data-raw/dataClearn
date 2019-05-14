@@ -1,0 +1,4 @@
+Keey columns: caseID
+Remove columns: observation id, CaseReadOrder, readerID.relative, Study, Track, ReadSetLetter, Initial.Comparison
+Rename columns: Ctype to caseType455 and caseType365
+Add columns: cancerStatus455, cancerStatus365
