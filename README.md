@@ -11,21 +11,21 @@ All statistical analyses make use of the iMRMC package ([Java GUI](https://githu
 
 # Main Assets
 
-* __[viperData_1.0.1.tar.gz](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperData_1.0.1.tar.gz)__: This is an R package (source) with the data and functions. Everything in this repository is in this package. See below for more details.
+* __[viperData_1.0.2.tar.gz](https://github.com/DIDSR/viperData/releases/download/1.0.2/viperData_1.0.2.tar.gz)__: This is an R package (source) with the data and functions. Everything in this repository is in this package. See below for more details.
 
-* __[viperData_1.0.1.zip](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperData_1.0.1.zip)__: This is an R package (binary) with the data and functions. Everything in this repository is in this package. See below for more details.
+* __[viperData_1.0.2.zip](https://github.com/DIDSR/viperData/releases/download/1.0.2/viperData_1.0.2.zip)__: This is an R package (binary) with the data and functions. Everything in this repository is in this package. See below for more details.
 
-* __[viperObs455.csv](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperObs455.csv)__: Individual observations of each reader reading each case. This data is also included as an R object (data frame) in the R package ([Documentation](https://didsr.github.io/viperData/man/viperObservations.html)).
+* __[viperObs.csv](https://github.com/DIDSR/viperData/releases/download/1.0.2/viperObs.csv)__: Individual observations of each reader reading each case. This data is also included as an R object (data frame) in the R package ([Documentation](https://didsr.github.io/viperData/man/viperObs.html)).
 
-* __[viperReaderQualifications.csv](https://github.com/DIDSR/viperData/releases/download/v1.0.1/viperReaderQualifications.csv)__: Information from the VIPER reader recruitment qualification forms. This data is also included as an R object (data frame) in the R package ([Documentation](https://didsr.github.io/viperData/man/viperReaderQualifications.html)).
+* __[viperReaderQualifications.csv](https://github.com/DIDSR/viperData/releases/download/1.0.2/viperReaderQualifications.csv)__: Information from the VIPER reader recruitment qualification forms. This data is also included as an R object (data frame) in the R package ([Documentation](https://didsr.github.io/viperData/man/viperReaderQualifications.html)).
 
-* __[dmistData.csv](https://github.com/DIDSR/viperData/releases/download/v1.0.1/dmistData.csv)__: Performance data manually translated from Pisano2005_NEJM_v353p1773 and its supplement. This data is also included as an R object (data frame) in the R package ([Documentation](https://didsr.github.io/viperData/man/dmistData.html))
+* __[dmistData.csv](https://github.com/DIDSR/viperData/releases/download/1.0.2/dmistData.csv)__: Performance data manually translated from Pisano2005_NEJM_v353p1773 and its supplement. This data is also included as an R object (data frame) in the R package ([Documentation](https://didsr.github.io/viperData/man/dmistData.html))
 
 ## Additional Assets
 
-* [An R-markdown file of the original manuscript](https://github.com/DIDSR/viperData/raw/master/inst/docs/viperPaper/VIPERpaper-JMI.Rmd) ([pdf version](https://didsr.github.io/viperData/inst/docs/viperPaper/VIPERpaper-JMI.pdf)),
-* [An R-markdown file of a "Supplementary Materials" document](https://github.com/DIDSR/viperData/raw/master/inst/docs/viperSupplementaryMaterials/viperSupplementaryMaterials.Rmd) ([pdf version](https://didsr.github.io/viperData/inst/docs/viperSupplementaryMaterials/viperSupplementaryMaterials.pdf)),
-* [The VIPER electronic case report form,](https://didsr.github.io/viperData/inst/docs/viperSupplementaryMaterials/viperECRF-4.pdf)
+* [An R-markdown file of the original manuscript](https://github.com/DIDSR/viperData/raw/master/inst/docs/viperPaper/VIPERpaper-JMI.Rmd) ([pdf version](https://didsr.github.io/viperData/inst/docs/viperPaper/VIPERpaper-JMI.pdf))
+* [An R-markdown file of a "Supplementary Materials" document](https://github.com/DIDSR/viperData/raw/master/inst/docs/viperSupplementaryMaterials/viperSupplementaryMaterials.Rmd) ([pdf version](https://didsr.github.io/viperData/inst/docs/viperSupplementaryMaterials/viperSupplementaryMaterials.pdf))
+* [The VIPER electronic case report form](https://didsr.github.io/viperData/inst/docs/viperSupplementaryMaterials/viperECRF-4.pdf)
 * [The VIPER instructions for ROC scores](https://didsr.github.io/viperData/inst/docs/viperSupplementaryMaterials/viperInstructions-scoring-v2.pdf)
 
 ## Additional Data Objects in the R Package
