@@ -9,8 +9,9 @@
 
 <h3>Description</h3>
 
-<p>The VIPER data sets were created by aggregating all the raw reader data files from the
-FDA VIPER study: Validation of Imaging Premarket Evaluation and Regulation (VIPER).
+<p>The VIPER data sets were created by aggregating
+all the raw reader data files from the FDA VIPER study:
+Validation of Imaging Premarket Evaluation and Regulation (VIPER).
 The data sets differ in the truth labels. See the documentation details.
 </p>
 
@@ -18,6 +19,8 @@ The data sets differ in the truth labels. See the documentation details.
 <h3>Usage</h3>
 
 <pre>
+<code>viperObs</code>
+
 viperObs365
 
 viperObs455
@@ -31,20 +34,22 @@ viperObs455
 
 <h3>Details</h3>
 
-<p>A data frame with 36 variables: <br />
+<p><code><a href="viperObs.html">viperObs</a></code>: This dataset is a simplified and merged version of
+<code><a href="viperObservations.html">viperObs455</a></code>: (truth labels based on cancer at 455 days) and
+<code><a href="viperObservations.html">viperObs365</a></code>: (truth labels based on cancer at 365 days).
+</p>
+<p>The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
+The VIPER study concept 2011. Data collection September 2013 to August 2015.
+Please refer to journal paper for details.
+</p>
+<p>The original data frames had the following 35 variables: <br />
 </p>
 
 <ul>
 <li> <p><code>CaseReadOrder</code> <br />
 </p>
 </li>
-<li> <p><code>CaseID</code> <br />
-</p>
-</li>
-<li> <p><code>Modality</code> <br />
-</p>
-</li>
-<li> <p><code>ReaderID</code> <br />
+<li> <p><code>readerID.relative</code>
 </p>
 </li>
 <li> <p><code>Study</code> <br />
@@ -65,10 +70,7 @@ viperObs455
 <li> <p><code>Initial.Comparison</code> <br />
 </p>
 </li>
-<li> <p><code>Final.Comparison</code> <br />
-</p>
-</li>
-<li> <p><code>case_id</code> <br />
+<li> <p><code>caseID</code> <br />
 </p>
 </li>
 <li> <p><code>redcap_event_name</code> <br />
@@ -131,6 +133,9 @@ viperObs455
 <li> <p><code>score</code> <br />
 </p>
 </li>
+<li> <p><code>caseGroup</code>
+</p>
+</li>
 <li> <p><code>desc</code> <br />
 </p>
 </li>
@@ -147,16 +152,6 @@ viperObs455
 </p>
 </li></ul>
 
-<p><strong>viperObs365</strong>: This dataset is identical to <code><a href="viperObservations.html">viperObs455</a></code> except for the truth labels.
-The truth labels for this dataset are based on cancer at 365 days.
-</p>
-<p><strong>viperObs455</strong>: This dataset is identical to <code><a href="viperObservations.html">viperObs365</a></code> except for the truth labels.
-The truth labels for this dataset are based on cancer at 455 days.
-</p>
-<p>The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
-The VIPER study concept 2011. Data collection September 2013 to August 2015.
-Please refer to journal paper for details.
-</p>
 
-<hr /><div style="text-align: center;">[Package <em>viperData</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+<hr /><div style="text-align: center;">[Package <em>viperData</em> version 1.0.2 <a href="00Index.html">Index</a>]</div>
 </body></html>

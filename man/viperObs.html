@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: viperObs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for viperObs {viperData}"><tr><td>viperObs {viperData}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>viperObs</h2>
+
+<h3>Description</h3>
+
+<p>The VIPER data sets were created by aggregating
+all the raw reader data files from the FDA 
+Validation of Imaging Premarket Evaluation and Regulation (VIPER):
+<code><a href="viperObservations.html">viperObs365</a></code> and <code><a href="viperObservations.html">viperObs455</a></code>.
+</p>
+
+
+<h3>Details</h3>
+
+<p>The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
+The VIPER study concept 2011. Data collection September 2013 to August 2015.
+Please refer to journal paper for details.
+</p>
+<p>viperObs is a data frame with 12 variables: <br />
+</p>
+
+<ul>
+<li> <p><code>caseType455</code> [str] Cancer type based on 455 days result: birads123sfm, birads0sfm, birads0ffdm, birads123ffdm, cancer
+</p>
+</li>
+<li> <p><code>caseType365</code> [str] Cancer type based on 365 days result: birads123sfm, birads0sfm, birads0ffdm, birads123ffdm, cancer
+</p>
+</li>
+<li> <p><code>cancerStatus455</code> [num] Cancer status based on 455 days result. 1: Cancer; 2: Not cancer
+</p>
+</li>
+<li> <p><code>cancerStatus365</code> [num] Cancer status based on 365 days result. 1: Cancer; 2: Not cancer
+</p>
+</li>
+<li> <p><code>caseID</code> [num] case ID
+</p>
+</li>
+<li> <p><code>readerID</code> [str] reader ID: 44 readers
+</p>
+</li>
+<li> <p><code>modalityID</code> [str] modality ID: FFDM, SFM
+</p>
+</li>
+<li> <p><code>recall</code> [num] binary recall decision. 1: recall; 2: not recall
+</p>
+</li>
+<li> <p><code>abnormalityType</code> abnormality type of case
+</p>
+</li>
+<li> <p><code>score</code> [num] dignostic result <br /> 
+0-100: not recall, lower value means higher not recall confidence <br /> 
+101-200: recall, higer value means higher recall confidence
+</p>
+</li>
+<li> <p><code>caseGroup</code> [str] group of case: cgrp1, cgrp2, cgrp3, cgrp4
+</p>
+</li>
+<li> <p><code>subStudyLabel</code> [str] study group: screeningLowP,screeningMedP,screeningHighP, challengeMedP,challengeHighP
+</p>
+</li></ul>
+
+
+<hr /><div style="text-align: center;">[Package <em>viperData</em> version 1.0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>
