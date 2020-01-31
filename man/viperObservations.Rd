@@ -8,6 +8,8 @@
 \title{viperObservations}
 \format{An object of class \code{data.frame} with 20382 rows and 35 columns.}
 \usage{
+\code{viperObs}
+
 viperObs365
 
 viperObs455
@@ -19,20 +21,25 @@ The VIPER data sets were created by aggregating
   The data sets differ in the truth labels. See the documentation details.
 }
 \details{
-A data frame with 36 variables: \cr
+\code{\link{viperObs}} is a simplified and merged version of
+\code{\link{viperObs455}} (truth labels based on cancer at 455 days) and
+\code{\link{viperObs365}} (truth labels based on cancer at 365 days).
+
+The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
+The VIPER study concept 2011. Data collection September 2013 to August 2015.
+Please refer to journal paper for details.
+
+The original data frames had the following 35 variables: \cr
   \itemize{
     \item \code{CaseReadOrder} \cr
-    \item \code{CaseID} \cr
-    \item \code{Modality} \cr
-    \item \code{ReaderID} \cr
+    \item \code{readerID.relative}
     \item \code{Study} \cr
     \item \code{Track} \cr
     \item \code{ReadSetLetter} \cr
     \item \code{Ctype} \cr
     \item \code{Compare.CaseIDs} \cr
     \item \code{Initial.Comparison} \cr
-    \item \code{Final.Comparison} \cr
-    \item \code{case_id} \cr
+    \item \code{caseID} \cr
     \item \code{redcap_event_name} \cr
     \item \code{readerID} \cr
     \item \code{form_start_datetime} \cr
@@ -53,24 +60,12 @@ A data frame with 36 variables: \cr
     \item \code{quality} \cr
     \item \code{UID} \cr
     \item \code{score} \cr
+    \item \code{caseGroup}
     \item \code{desc} \cr
     \item \code{read_order} \cr
     \item \code{Comment} \cr
     \item \code{RecallRegion} \cr
     \item \code{count}
   }
-
-  \strong{viperObs365}: This dataset is identical to \code{\link{viperObs455}} except for the truth labels.
-  The truth labels for this dataset are based on cancer at 365 days.
-
-  \strong{viperObs455}: This dataset is identical to \code{\link{viperObs365}} except for the truth labels.
-  The truth labels for this dataset are based on cancer at 455 days.
-  
-  We clean and merge \code{\link{viperObs455}} and \code{\link{viperObs365}} dataset into \code{\link{viperObs}}.
-  Please find detail information in \code{\link{viperObs}}.
-  
-  The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
-  The VIPER study concept 2011. Data collection September 2013 to August 2015.
-  Please refer to journal paper for details.
 }
 \keyword{datasets}

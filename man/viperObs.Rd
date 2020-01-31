@@ -5,12 +5,16 @@
 \title{viperObs}
 \description{
 The VIPER data sets were created by aggregating
-  all the raw reader data files from the FDA VIPER study (365 and 455 days observations):
-  Validation of Imaging Premarket Evaluation and Regulation (VIPER).
-  The data sets differ in the truth labels. See the documentation details.
+  all the raw reader data files from the FDA 
+  Validation of Imaging Premarket Evaluation and Regulation (VIPER):
+  \code{\link{viperObs365}} and \code{\link{viperObs455}}.
 }
 \details{
-A data frame with 36 variables: \cr
+The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
+  The VIPER study concept 2011. Data collection September 2013 to August 2015.
+  Please refer to journal paper for details.
+
+  viperObs is a data frame with 12 variables: \cr
   \itemize{
     \item \code{caseType455} [str] Cancer type based on 455 days result: birads123sfm, birads0sfm, birads0ffdm, birads123ffdm, cancer
     \item \code{caseType365} [str] Cancer type based on 365 days result: birads123sfm, birads0sfm, birads0ffdm, birads123ffdm, cancer
@@ -27,9 +31,4 @@ A data frame with 36 variables: \cr
     \item \code{caseGroup} [str] group of case: cgrp1, cgrp2, cgrp3, cgrp4
     \item \code{subStudyLabel} [str] study group: screeningLowP,screeningMedP,screeningHighP, challengeMedP,challengeHighP
   }
-
-
-  The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
-  The VIPER study concept 2011. Data collection September 2013 to August 2015.
-  Please refer to journal paper for details.
 }
