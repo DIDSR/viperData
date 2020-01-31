@@ -17,6 +17,9 @@ This function estimates the VIPER performance results.
 Before archiving this on GitHub, the function was called analyzeData.
 }
 \examples{
-library("iMRMC")
-viperSummary <- viperData::doViperSummary(viperData::viperObs455)
+# This example takes a long time (4min with Intel Core i7).
+# I am commenting it out so that package checks don't take too long.
+# You are welcome to run it!
+# library("iMRMC")
+# viperSummary <- viperData::doViperSummary(viperData::viperObs455)
 }

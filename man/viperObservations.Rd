@@ -13,8 +13,9 @@ viperObs365
 viperObs455
 }
 \description{
-The VIPER data sets were created by aggregating all the raw reader data files from the
-  FDA VIPER study: Validation of Imaging Premarket Evaluation and Regulation (VIPER).
+The VIPER data sets were created by aggregating
+  all the raw reader data files from the FDA VIPER study:
+  Validation of Imaging Premarket Evaluation and Regulation (VIPER).
   The data sets differ in the truth labels. See the documentation details.
 }
 \details{
@@ -64,7 +65,10 @@ A data frame with 36 variables: \cr
 
   \strong{viperObs455}: This dataset is identical to \code{\link{viperObs365}} except for the truth labels.
   The truth labels for this dataset are based on cancer at 455 days.
-
+  
+  We clean and merge \code{\link{viperObs455}} and \code{\link{viperObs365}} dataset into \code{\link{viperObs}}.
+  Please find detail information in \code{\link{viperObs}}.
+  
   The images used in this study were selected from the DMIST images [Pisano2005_NEJM_v353p1773].
   The VIPER study concept 2011. Data collection September 2013 to August 2015.
   Please refer to journal paper for details.
