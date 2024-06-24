@@ -4,7 +4,9 @@
 \name{dmistRSsummary}
 \alias{dmistRSsummary}
 \title{dmistRSsummary}
-\format{An object of class \code{list} of length 16.}
+\format{
+An object of class \code{list} of length 16.
+}
 \usage{
 dmistRSsummary
 }

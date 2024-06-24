@@ -4,7 +4,9 @@
 \name{viperReaderQualifications}
 \alias{viperReaderQualifications}
 \title{VIPER reader qualification summary}
-\format{An object of class \code{data.frame} with 43 rows and 10 columns.}
+\format{
+An object of class \code{data.frame} with 43 rows and 10 columns.
+}
 \usage{
 viperReaderQualifications
 }

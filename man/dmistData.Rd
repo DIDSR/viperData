@@ -4,7 +4,9 @@
 \name{dmistData}
 \alias{dmistData}
 \title{DMIST data}
-\format{An object of class \code{list} of length 6.}
+\format{
+An object of class \code{list} of length 6.
+}
 \usage{
 dmistData
 }
