@@ -1,8 +1,6 @@
 # Extract "screeningLowP" sub-study data
-# Gallas et al.
-# “Impact of prevalence and case distribution in lab-based diagnostic imaging studies”
-# J Med Imaging, vol. 6, no. 1, p. 015501, Jan. 2019
-# doi: 10.1117/1.JMI.6.1.015501.
+
+
 
 library(iMRMC)
 library(viperData)
