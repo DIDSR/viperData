@@ -61,8 +61,8 @@ cat(sum(1 - cases$cancerStatus455), "= number of non-cancer cases (455 days foll
 
 # Save data frame ##########
 casesViper <- cases
-write.csv(casesViper, file = file.path("inst", "extdata", "casesViper.csv"),
-          row.names = FALSE)
+write.csv(casesViper, row.names = FALSE, quote = FALSE,
+          file = file.path("inst", "extdata", "casesViper.csv"))
 usethis::use_data(casesViper, overwrite = TRUE)
 
 
