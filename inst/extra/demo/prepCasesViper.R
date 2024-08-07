@@ -1,5 +1,21 @@
 # Extract information on cases (not observations)
 
+# There are 715 cases with the following 9 columns:
+#   caseType455 - 5-level factor identifying modality+BIRADS score at 455 days
+#   caseType365 - 5-level factor identifying modality+BIRADS score at 365 days
+#       "birads0ffdm"
+#       "birads0sfm"
+#       "birads123ffdm"
+#       "birads123sfm"
+#       "cancer"
+#   cancerStatus455 - cancerType455 derived score: cancer (0) and non-cancer (1)
+#   cancerStatus365 - cancerType365 derived score: cancer (0) and non-cancer (1)
+#   caseID
+#   readerID - "truth"
+#   modalityID - "truth"
+
+
+
 library(iMRMC)
 library(viperData)
 
@@ -27,6 +43,10 @@ for (mrmcDF.cur in split(mrmcDF, mrmcDF$caseID)) {
   cases.cur <- deleteCol(cases.cur, "recall")
   cases.cur <- deleteCol(cases.cur, "abnormalityType")
   cases.cur <- deleteCol(cases.cur, "score")
+  
+  # Remove sub-study information
+  cases.cur <- deleteCol(cases.cur, "caseGroup")
+  cases.cur <- deleteCol(cases.cur, "subStudyLabel")
   
   # Aggregate case-specific info  
   cases <- rbind(cases, cases.cur)
