@@ -5,6 +5,8 @@
 # J Med Imaging, vol. 6, no. 1, p. 015501, Jan. 2019
 # doi: 10.1117/1.JMI.6.1.015501.
 
+
+
 library(iMRMC)
 library(viperData)
 
@@ -16,7 +18,7 @@ library(viperData)
 mrmcDF <- viperData::screeningLowP
 truth <- viperData::casesViper
 
-# Extract the case information
+# Extract the case information for the "screeningLowP" sub-study
 truth <- truth[truth$caseID %in% levels(mrmcDF$caseID), ]
 cases <- levels(factor(truth$caseID))
 casesPos <- levels(factor(truth$caseID[truth$cancerStatus455 == 1]))
@@ -41,16 +43,16 @@ mrmcDF$scoreOrig <- mrmcDF$score
 # Default score for non-cancer cases is 0.5
 mrmcDF$score <- 0.5
 
-# Determine cancer cases
+# For each observation, determine if it is cancer or not
 indexTF <- mrmcDF$caseID %in% casesPos
 mrmcDF$cancer <- FALSE
 mrmcDF$cancer[indexTF] <- TRUE
 
-# Determine successes for cancer cases
+# For each observation, determine if it is a true-positive score
 indexTF <- mrmcDF$caseID %in% casesPos & mrmcDF$scoreOrig > threshold
 mrmcDF$score[indexTF] <- 1.0
 
-# Determine fails for cancer cases
+# For each observation, determine if it is a false-negative score
 indexTF <- mrmcDF$caseID %in% casesPos & mrmcDF$scoreOrig <= threshold
 mrmcDF$score[indexTF] <- 0.0
 
@@ -63,8 +65,11 @@ truth <- renameCol(truth, "cancerStatus455", "score")
 
 
 # Analyze data ##########
-mrmcInput <- mrmcDF[, c("readerID", "caseID", "modalityID", "score")]
-mrmcInput <- rbind(truth, mrmcInput)
+
+# Aggregate key columns of truth and observations for analysis
+mrmcInputTruth <- truth[, c("readerID", "caseID", "modalityID", "score")]
+mrmcInputObs <- mrmcDF[, c("readerID", "caseID", "modalityID", "score")]
+mrmcInput <- rbind(mrmcInputTruth, mrmcInputObs)
 View(mrmcInput)
 result <- doIMRMC(mrmcInput)
 
