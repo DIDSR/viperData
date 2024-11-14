@@ -240,16 +240,16 @@ The total variance of AUCs or differences in AUCs from a fully-crossed study can
 
 **Equation 1**
 $$
-V=\frac{var_0^{2}}{N_{0}}+\frac{var_{1}^{2}}{N_{1}}+\frac{var_{01}^{2}}{N_{0}N_{1}}+\frac{var_{R}^{2}}{N_{R}}+\frac{var_{0R}^{2}}{N_{0}N_{R}}+\frac{var_{1R}^{2}}{N_{1}N_{R}}+\frac{var_{01R}^{2}}{N_{0}N_{1}N_{R}},
+V=\frac{var_0}{N_{0}}+\frac{var_{1}}{N_{1}}+\frac{var_{01}}{N_{0}N_{1}}+\frac{var_{R}}{N_{R}}+\frac{var_{0R}}{N_{0}N_{R}}+\frac{var_{1R}}{N_{1}N_{R}}+\frac{var_{01R}}{N_{0}N_{1}N_{R}},
 $$
 
-where $N_0$, $N_1$, $N_R$ are the number of normal (non-cancer) cases, diseased (cancer) cases, and readers, $var_{0}^{2}$, $var_{1}^{2}$, and $var_{R}^{2}$ are the variances due to the normal cases (non-cancers), the diseased cases (cancers), and the readers. The other variance components correspond to variances arising from interactions between the main variance components.
+where $N_0$, $N_1$, $N_R$ are the number of normal (non-cancer) cases, diseased (cancer) cases, and readers, $var_{0}$, $var_{1}$, and $var_{R}$ are the variances due to the normal cases (non-cancers), the diseased cases (cancers), and the readers. The other variance components correspond to variances arising from interactions between the main variance components.
 
 When the study is not fully crossed, the weights for each variance component are different and calculable [@Gallas2008_Neural-Networks_v21p387]. In particular, we can calculate the weights for a split-plot study design. For example, consider a split-plot study with $N_G$ groups that have the same number of readers and cases ($N_0$, $N_1$, and $N_R$ are all divisible by $N_G$). Assuming a study with readers and cases paired across the modalities, the variance of the difference in AUCs is given by
 
 **Equation 2**
 $$
-V=\frac{var_{0}^{2}}{N_{0}}+\frac{var_{1}^{2}}{N_{1}}+\frac{N_Gvar_{01}^{2}}{N_{0}N_{1}}+\frac{var_{R}^{2}}{N_{R}}+\frac{N_Gvar_{0R}^{2}}{N_{0}N_{R}}+\frac{N_Gvar_{1R}^{2}}{N_{1}N_{R}}+\frac{N_G^2var_{01R}^{2}}{N_{0}N_{1}N_{R}}.
+V=\frac{var_{0}}{N_{0}}+\frac{var_{1}}{N_{1}}+\frac{N_Gvar_{01}}{N_{0}N_{1}}+\frac{var_{R}}{N_{R}}+\frac{N_Gvar_{0R}}{N_{0}N_{R}}+\frac{N_Gvar_{1R}}{N_{1}N_{R}}+\frac{N_G^2var_{01R}}{N_{0}N_{1}N_{R}}.
 $$
 
 ```{r, eval=FALSE}
