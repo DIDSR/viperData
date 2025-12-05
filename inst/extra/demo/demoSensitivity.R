@@ -18,6 +18,15 @@ library(viperData)
 mrmcDF <- viperData::screeningLowP
 truth <- viperData::casesViper
 
+mrmcDF <- read.csv(file.path("inst", "extdata", "screeningLowP.csv"))
+mrmcDF$caseID <- factor(mrmcDF$caseID)
+
+truth <- read.csv(file.path("inst", "extdata", "casesViper.csv"))
+truth$caseID <- factor(truth$caseID)
+truth$readerID <- factor(truth$readerID)
+
+
+
 # Extract the case information for the "screeningLowP" sub-study
 truth <- truth[truth$caseID %in% levels(mrmcDF$caseID), ]
 cases <- levels(factor(truth$caseID))
@@ -122,6 +131,39 @@ print(paste(
   ")"
 ))
 
+
+
+# Sizing ##########
+comp <- result$varDecomp$BCK$Ustat$comp
+coeff <- result$varDecomp$BCK$Ustat$coeff
+print(comp, digits = 3)
+print(coeff, digits = 3)
+
+desc <- setdiff(names(comp), c("modalityID.1", "modalityID.2"))
+comp <- comp[1, desc] + comp[2, desc] - 2 * comp[3, desc]
+coeff <- coeff[1, desc]
+contrib <- comp * coeff
+
+print(contrib, digits = 3)
+print(sum(contrib))
+print(result$Ustat$varAUCAminusAUCB[3])
+
+NG <- 4
+N0 <- 347
+N1 <- 72
+NR <- 20
+coeffNew <- data.frame(
+  N = 1/N0,
+  D = 1/N1,
+  ND = NG*1/N0/N1,
+  R = 1/NR,
+  NR = NG*1/N0/NR,
+  DR = NG*1/N1/NR,
+  RND = NG*NG*1/N0/N1/NR
+)
+contribNew <- comp * coeffNew
+print(contribNew, digits = 3)
+print(sqrt(sum(contribNew)))
 
 
 # Save input data formatted for the java app ##########
